@@ -13,7 +13,7 @@ a simple test app to get an overview on the performance of a system by calculati
 System | Rust (debug) | Rust (release) | Python 
 ---|---|---|---
 Apple M1 | 0.57 | 0.14 | 7.36
-Raspberry Pi 5 | 1.52 | 0.23 
+Raspberry Pi 5 | 1.52 | 0.23 | 12.34
 ESP32 
 
 all values in sec.
@@ -50,6 +50,21 @@ Calculate Pi
  7 calculate pi(   10000000) = 3.1415925535897915   delta = 1.0000000161269895e-7
  8 calculate pi(  100000000) = 3.141592643589326    delta = 1.0000467121074053e-8
 Time elapsed in calculate_pi() is: 232.083569ms
+```
+
+#### Python 3.11.2
+
+```
+          10 ... 3.0418396189294032
+         100 ... 3.1315929035585537
+        1000 ... 3.140592653839794
+       10000 ... 3.1414926535900345
+      100000 ... 3.1415826535897198
+     1000000 ... 3.1415916535897743
+    10000000 ... 3.1415925535897915
+   100000000 ... 3.141592643589326
+XXXXXXXXXXXX ... 3.14159265358979323846264338327950288419716939937510
+done in 12.343376159667969s
 ```
 
 ### Apple MacBook Pro M1 (2020 version)
